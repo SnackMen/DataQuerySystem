@@ -17,7 +17,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 @PropertySource("classpath:mongodb.properties")
 public class MongodbDataConfiguration extends AbstractMongoConfiguration {
 
-    @Value("${mongo.host")
+    @Value("${mongo.host}")
     private String hostName;
 
     @Value("${mongo.dbName}")
