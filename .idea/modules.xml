@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DataQuerySystem.iml" filepath="$PROJECT_DIR$/.idea/DataQuerySystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuerySystem/QuerySystem.iml" filepath="$PROJECT_DIR$/QuerySystem/QuerySystem.iml" />
     </modules>
   </component>
 </project>
