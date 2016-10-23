@@ -1,16 +1,33 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: laowang
-  Date: 16-10-23
-  Time: 下午12:38
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Hnmr测试页面</title>
 </head>
 <body>
-
+    <div>
+        <p>
+            ${hnmr.top_NO}
+        </p>
+        <p>
+            ${hnmr.top_Mhz}
+        </p>
+        <p>
+            ${hnmr.top_gMl}
+        </p>
+    </div>
+    <div>
+        <img src="#" alt="">
+    </div>
+    <div>
+        <img src="#" alt="">
+    </div>
+    <div>
+        <p>
+            ${hnmr.under_Title}
+        </p>
+        <p>
+            ${hnmr.under_Text}
+        </p>
+    </div>
 </body>
 </html>

@@ -1,16 +1,33 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: laowang
-  Date: 16-10-23
-  Time: 下午12:38
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>cnmr页面测试</title>
 </head>
 <body>
-
+    <div>
+        <p>
+            ${cnmr.top_NO}
+        </p>
+        <p>
+            ${cnmr.top_Mhz}
+        </p>
+        <p>
+            ${cnmr.top_gMl}
+        </p>
+    </div>
+    <div>
+        <img src="#" alt="">
+    </div>
+    <div>
+        <img src="#" alt="">
+    </div>
+    <div>
+        <p>
+            ${cnmr.under_Title}
+        </p>
+        <p>
+            ${cnmr.under_Text}
+        </p>
+    </div>
 </body>
 </html>
