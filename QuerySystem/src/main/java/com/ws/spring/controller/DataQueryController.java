@@ -1,7 +1,9 @@
 package com.ws.spring.controller;
 
 import com.ws.spring.model.DataQuery;
+import com.ws.spring.model.MSColledtionModel;
 import com.ws.spring.model.SDBSCollectionModel;
+import com.ws.spring.service.FindDataMsServiceImpl;
 import com.ws.spring.service.FindDataSDBSServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +14,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 import javax.validation.Valid;
@@ -24,6 +27,9 @@ public class DataQueryController {
 
     @Autowired
     FindDataSDBSServiceImpl service;
+
+    @Autowired
+    FindDataMsServiceImpl msService;
 
 //    @RequestMapping(value = "/getMessage",method = RequestMethod.GET)
 //    public String getMessage(ModelMap modelMap){
@@ -61,8 +67,22 @@ public class DataQueryController {
 
     }
 
+    @RequestMapping(value = "/ms",method = RequestMethod.POST)
+    public String postMsData(String sdbsno,ModelMap modelMap){
+        int number = Integer.valueOf(sdbsno.trim());
+        MSColledtionModel msColledtionModel = (MSColledtionModel)msService.findDataBySdbsno(number,"ms_table");
+        if(msColledtionModel==null){
+            return "error";
+        }
+        System.out.println(msColledtionModel.getPicUrl());
+        modelMap.addAttribute("ms",msColledtionModel);
+        System.out.println("调用ms");
+       return "ms";
+    }
+
     @RequestMapping(value = "/ms",method = RequestMethod.GET)
-    public String getMsData(ModelMap modelMap){
-       return null;
+    public String getMsData(@RequestParam("sdbsno") String sdbsno){
+
+        return "ms";
     }
 }

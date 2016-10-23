@@ -1,16 +1,16 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: laowang
-  Date: 16-10-23
-  Time: 下午12:38
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.ws.spring.model.MSColledtionModel" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>ms页面测试</title>
 </head>
 <body>
-
+    <p>
+        ${ms.topText}
+    </p>
+    <img src="/home/pic/laowang/${ms.picUrl}.cgi" />
+    <p>
+        ${ms.underText}
+    </p>
 </body>
 </html>

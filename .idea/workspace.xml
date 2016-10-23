@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdd7ce8d-df7d-4220-a1a4-4fc9a93d9976" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/cnmr.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/esr.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/hnmr.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ir.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ir2.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/raman.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js/jquery-3.0.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/pic/1.cgi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/controller/DataQueryController.java" afterPath="$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/controller/DataQueryController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/getmessage.jsp" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/getmessage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js/handledata.js" afterPath="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js/handledata.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuerySystem/target/dataquerysystem/WEB-INF/views/getmessage.jsp" afterPath="$PROJECT_DIR$/QuerySystem/target/dataquerysystem/WEB-INF/views/getmessage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuerySystem/target/dataquerysystem/WEB-INF/views/ms.jsp" afterPath="$PROJECT_DIR$/QuerySystem/target/dataquerysystem/WEB-INF/views/ms.jsp" />
     </list>
     <ignored path="DataQuerySystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,31 +34,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getmessage.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getmessage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/getmessage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+            <state relative-caret-position="-192">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ms.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="handledata.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js/handledata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ms.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="251">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,13 +67,31 @@
       <file leaf-file-name="DataQueryController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/controller/DataQueryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+            <state relative-caret-position="210">
+              <caret line="76" column="56" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2315#2316#0" expanded="true" />
-                <element signature="e#2341#2342#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MSColledtionModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/MSColledtionModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/test.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,6 +106,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DataQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/DataQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding>
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -99,6 +128,7 @@
         <option value="Class" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -160,9 +190,10 @@
         <option value="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ir2.jsp" />
         <option value="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/raman.jsp" />
         <option value="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/esr.jsp" />
-        <option value="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp" />
-        <option value="$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/controller/DataQueryController.java" />
         <option value="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/getmessage.jsp" />
+        <option value="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js/handledata.js" />
+        <option value="$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/controller/DataQueryController.java" />
+        <option value="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp" />
       </list>
     </option>
   </component>
@@ -364,6 +395,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataQuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataQuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataQuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataQuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -417,6 +516,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,6 +586,36 @@
               <option name="myItemId" value="spring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataQuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataQuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuerySystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -504,10 +637,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/pic" />
+      <recent name="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js" />
       <recent name="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/css" />
       <recent name="$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/QuerySystem/src/main/webapp/static/pic" />
       <recent name="$PROJECT_DIR$/QuerySystem/src/main/webapp" />
       <recent name="$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views" />
     </key>
@@ -1079,12 +1215,12 @@
       <updated>1477127245045</updated>
       <workItem from="1477127247767" duration="223000" />
       <workItem from="1477127481462" duration="18037000" />
-      <workItem from="1477195280052" duration="4911000" />
+      <workItem from="1477195280052" duration="19060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23171000" />
+    <option name="totallyTimeSpent" value="37320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="701" extended-state="6" />
@@ -1099,12 +1235,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40697673" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66445184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25083056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28903654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34053156" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24658574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26100153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1171,96 +1307,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/ESRCollectionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="64" column="84" selection-start-line="64" selection-start-column="84" selection-end-line="64" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#249#250#0" expanded="false" />
-            <element signature="e#278#279#0" expanded="false" />
-            <element signature="e#319#320#0" expanded="false" />
-            <element signature="e#355#356#0" expanded="false" />
-            <element signature="e#500#501#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#566#567#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#708#709#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#782#783#0" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#864#865#0" expanded="false" />
-            <element signature="e#906#907#0" expanded="false" />
-            <element signature="e#939#940#0" expanded="false" />
-            <element signature="e#968#969#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-            <element signature="e#1048#1049#0" expanded="false" />
-            <element signature="e#1093#1094#0" expanded="false" />
-            <element signature="e#1184#1185#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/CNMRCollectionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="102" column="89" selection-start-line="102" selection-start-column="89" selection-end-line="102" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#495#496#0" expanded="false" />
-            <element signature="e#521#522#0" expanded="false" />
-            <element signature="e#561#562#0" expanded="false" />
-            <element signature="e#591#592#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#650#651#0" expanded="false" />
-            <element signature="e#691#692#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#760#761#0" expanded="false" />
-            <element signature="e#789#790#0" expanded="false" />
-            <element signature="e#833#834#0" expanded="false" />
-            <element signature="e#869#870#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#933#934#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1017#1018#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-            <element signature="e#1081#1082#0" expanded="false" />
-            <element signature="e#1127#1128#0" expanded="false" />
-            <element signature="e#1165#1166#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1237#1238#0" expanded="false" />
-            <element signature="e#1291#1292#0" expanded="false" />
-            <element signature="e#1337#1338#0" expanded="false" />
-            <element signature="e#1376#1377#0" expanded="false" />
-            <element signature="e#1411#1412#0" expanded="false" />
-            <element signature="e#1467#1468#0" expanded="false" />
-            <element signature="e#1515#1516#0" expanded="false" />
-            <element signature="e#1553#1554#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1641#1642#0" expanded="false" />
-            <element signature="e#1687#1688#0" expanded="false" />
-            <element signature="e#1724#1725#0" expanded="false" />
-            <element signature="e#1757#1758#0" expanded="false" />
-            <element signature="e#1809#1810#0" expanded="false" />
-            <element signature="e#1853#1854#0" expanded="false" />
-            <element signature="e#1898#1899#0" expanded="false" />
-            <element signature="e#1994#1995#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/HNMRCollectionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1373">
-          <caret line="102" column="126" selection-start-line="102" selection-start-column="126" selection-end-line="102" selection-end-column="126" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/IRCollectionModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1305,36 +1351,6 @@
             <element signature="e#1325#1326#0" expanded="false" />
             <element signature="e#1381#1382#0" expanded="false" />
             <element signature="e#1429#1430#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/MSColledtionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#363#364#0" expanded="false" />
-            <element signature="e#389#390#0" expanded="false" />
-            <element signature="e#429#430#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#489#490#0" expanded="false" />
-            <element signature="e#518#519#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#595#596#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#779#780#0" expanded="false" />
-            <element signature="e#811#812#0" expanded="false" />
-            <element signature="e#861#862#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#1009#1010#0" expanded="false" />
-            <element signature="e#1045#1046#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1457,7 +1473,7 @@
         <state relative-caret-position="158">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1476,6 +1492,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1483,6 +1502,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1490,6 +1512,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1497,6 +1522,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1504,6 +1532,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1543,6 +1574,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1562,17 +1596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/DataQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1581,26 +1604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1653,11 +1660,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp">
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js/jquery-3.0.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/DataQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1671,20 +1705,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/controller/DataQueryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="76" column="56" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2315#2316#0" expanded="true" />
-            <element signature="e#2341#2342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/getmessage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+        <state relative-caret-position="-192">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/java/com/ws/spring/model/MSColledtionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/pic/1.cgi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/static/js/handledata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuerySystem/src/main/webapp/WEB-INF/views/ms.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
