@@ -49,10 +49,20 @@ public class DataQueryController {
             return "error";
         }
         SDBSCollectionModel sdbsCollectionModel = (SDBSCollectionModel) service.findDataBySdbsno(dataQuery.getDataSbdsno(),"sdbs_collection");
-
+        if(sdbsCollectionModel==null){
+            return "error";
+        }
+        if(!sdbsCollectionModel.getMs().equals("N")){
+            sdbsCollectionModel.setMs("ms.jsp");
+        }
         modelMap.addAttribute("sdbsno",sdbsCollectionModel);
 
         return "getmessage";
+
     }
 
+    @RequestMapping(value = "/ms",method = RequestMethod.GET)
+    public String getMsData(ModelMap modelMap){
+       return null;
+    }
 }
