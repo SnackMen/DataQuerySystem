@@ -3,6 +3,8 @@ package com.ws.spring.controller;
 import com.ws.spring.model.*;
 import com.ws.spring.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 import javax.validation.Valid;
+import java.util.List;
 
 /**
  * Created by laowang on 16-10-22.
@@ -69,18 +72,26 @@ public class DataQueryController {
             System.out.println("wrong");
             return "error";
         }
-        SDBSCollectionModel sdbsCollectionModel = (SDBSCollectionModel) service.findDataBySdbsno(dataQuery.getDataSbdsno(),"sdbs_collection");
-        if(sdbsCollectionModel==null){
+        if(dataQuery.getDataSbdsno()!=null){
+            SDBSCollectionModel sdbsCollectionModel = (SDBSCollectionModel) service.findDataBySdbsno(dataQuery.getDataSbdsno(),"sdbs_collection");
+            if(sdbsCollectionModel==null){
+                return "error";
+            }
+            if(!sdbsCollectionModel.getMs().equals("N")){
+                sdbsCollectionModel.setMs("ms.jsp");
+            }
+            modelMap.addAttribute("sdbsno",sdbsCollectionModel);
+
+            return "getmessage";
+        }
+
+        List<SDBSCollectionModel> lists = service.findDataByFormula(dataQuery.getDataFormula().trim().toUpperCase(),"sdbs_collection");
+        if(lists==null || lists.size()==0)
             return "error";
-        }
-        if(!sdbsCollectionModel.getMs().equals("N")){
-            sdbsCollectionModel.setMs("ms.jsp");
-        }
-        modelMap.addAttribute("sdbsno",sdbsCollectionModel);
-
-        return "getmessage";
-
+        modelMap.addAttribute("formula",lists);
+        return "formula";
     }
+
 
     @RequestMapping(value = "/ms",method = RequestMethod.POST)
     public String postMsData(String sdbsno,ModelMap modelMap){
@@ -100,6 +111,7 @@ public class DataQueryController {
 
         return "ms";
     }
+
 
     @RequestMapping(value = "/cnmr",method = RequestMethod.POST)
     public String postCnmrData(String sdbsno,ModelMap modelMap){

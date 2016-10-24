@@ -11,23 +11,33 @@ public class DataQuery implements Serializable {
 
     private Integer dataSbdsno;
 
+    private String dataFormula;
+
+    public DataQuery(){
+
+    }
 
     public Integer getDataSbdsno() {
         return dataSbdsno;
     }
 
-    public void setDataSbdsno(int dataSbdsno) {
+    public void setDataSbdsno(Integer dataSbdsno) {
         this.dataSbdsno = dataSbdsno;
     }
 
-    public DataQuery(){
+    public String getDataFormula() {
+        return dataFormula;
+    }
 
+    public void setDataFormula(String dataFormula) {
+        this.dataFormula = dataFormula;
     }
 
     @Override
     public String toString() {
         return "DataQuery{" +
                 "dataSbdsno=" + dataSbdsno +
+                ", dataFormula='" + dataFormula + '\'' +
                 '}';
     }
 }

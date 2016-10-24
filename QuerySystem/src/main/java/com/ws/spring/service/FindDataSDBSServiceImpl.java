@@ -1,6 +1,7 @@
 package com.ws.spring.service;
 
 import com.ws.spring.dao.FindDataSDBSCollectionImpl;
+import com.ws.spring.model.SDBSCollectionModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,7 +30,7 @@ public class FindDataSDBSServiceImpl implements FindDataService {
     }
 
     @Override
-    public List<Object> findDataByFormula(String formula, String collectionName) {
-        return null;
+    public List<SDBSCollectionModel> findDataByFormula(String formula, String collectionName) {
+        return findDataSDBSCollection.findDataByFormula(formula,collectionName);
     }
 }

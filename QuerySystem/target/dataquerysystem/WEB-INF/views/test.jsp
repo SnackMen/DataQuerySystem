@@ -8,7 +8,11 @@
 </head>
 <body>
 <form:form method="post" action="/test" modelAttribute="dataQuery">
-    SDBS NO: <form:input path="dataSbdsno"/>
+    SDBS NO:
+    <form:input path="dataSbdsno"/>
+
+    Molecular Formula:
+    <form:input path="dataFormula" />
 
     <input type="submit" value="submit">
 </form:form>
