@@ -5,8 +5,7 @@
 </head>
 <body>
     <div>
-        <img src="#" alt="">
-        ${ir.picUrl}
+        <img src="${ir.picCdn}" alt="">
     </div>
 </body>
 </html>

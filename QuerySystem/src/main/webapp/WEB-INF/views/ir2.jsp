@@ -8,14 +8,14 @@
         ${ir2.head}
     </div>
     <div>
-        <img src="#" alt="">
+        <img src="${ir2.firstPicCdn}" alt="">
     </div>
     <div>
         ${ir2.tileTitle}
         ${ir2.tile}
     </div>
     <div>
-        <img src="#" alt="">
+        <img src="${ir2.secondPicCdn}" alt="">
     </div>
 </body>
 </html>

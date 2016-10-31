@@ -5,8 +5,8 @@
 </head>
 <body>
     <div>
-        <img src="#" alt="">
-        ${raman.picUrl}
+        <img src="${raman.picCdn}" alt="">
+
     </div>
 </body>
 </html>

@@ -16,10 +16,10 @@
         </p>
     </div>
     <div>
-        <img src="#" alt="">
+        <img src="${hnmr.firstPicCdn}" alt="">
     </div>
     <div>
-        <img src="#" alt="">
+        <img src="${hnmr.secondPicCdn}" alt="">
     </div>
     <div>
         <p>

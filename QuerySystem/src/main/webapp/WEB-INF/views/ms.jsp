@@ -9,7 +9,7 @@
         ${ms.topText}
     </p>
     <%--要么利用网页连接,要么只能用本地,绝对路径行不通--%>
-    <img src="/home/pic/laowang/${ms.picUrl}.cgi" />
+    <img src="${ms.picCdn}" />
     <p>
         ${ms.underText}
     </p>

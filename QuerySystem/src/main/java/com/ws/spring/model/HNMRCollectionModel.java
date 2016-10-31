@@ -26,6 +26,26 @@ public class HNMRCollectionModel {
 
     private String under_Text;
 
+    private String firstPicCdn;
+
+    private String secondPicCdn;
+
+    public String getFirstPicCdn() {
+        return firstPicCdn;
+    }
+
+    public void setFirstPicCdn(String firstPicCdn) {
+        this.firstPicCdn = firstPicCdn;
+    }
+
+    public String getSecondPicCdn() {
+        return secondPicCdn;
+    }
+
+    public void setSecondPicCdn(String secondPicCdn) {
+        this.secondPicCdn = secondPicCdn;
+    }
+
     public ObjectId get_id() {
         return _id;
     }

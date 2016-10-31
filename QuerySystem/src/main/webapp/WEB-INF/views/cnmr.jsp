@@ -16,10 +16,10 @@
         </p>
     </div>
     <div>
-        <img src="#" alt="">
+        <img src="${cnmr.firstPicCdn}" alt="">
     </div>
     <div>
-        <img src="#" alt="">
+        <img src="${cnmr.secondPicCdn}" alt="">
     </div>
     <div>
         <p>

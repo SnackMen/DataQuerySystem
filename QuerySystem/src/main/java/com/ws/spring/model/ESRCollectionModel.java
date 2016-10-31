@@ -26,6 +26,16 @@ public class ESRCollectionModel {
 
     private String picUrl;
 
+    private String picCdn;
+
+    public String getPicCdn() {
+        return picCdn;
+    }
+
+    public void setPicCdn(String picCdn) {
+        this.picCdn = picCdn;
+    }
+
     public ObjectId get_id() {
         return _id;
     }

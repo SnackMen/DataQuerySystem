@@ -10,7 +10,7 @@
         </p>
     </div>
     <div>
-        <img src="#" alt="">
+        <img src="${esr.picCdn}" alt="">
     </div>
     <div>
         <p>
