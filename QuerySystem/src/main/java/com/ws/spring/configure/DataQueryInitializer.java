@@ -20,4 +20,5 @@ public class DataQueryInitializer extends AbstractAnnotationConfigDispatcherServ
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
+
 }

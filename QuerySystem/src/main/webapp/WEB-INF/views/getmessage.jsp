@@ -3,7 +3,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>查询结果</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/bootstrap.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/custom.css">
     <script src="${pageContext.request.contextPath}/static/js/jquery-3.0.0.min.js"></script>

@@ -33,4 +33,8 @@ public class FindDataSDBSServiceImpl implements FindDataService {
     public List<SDBSCollectionModel> findDataByFormula(String formula, String collectionName) {
         return findDataSDBSCollection.findDataByFormula(formula,collectionName);
     }
+
+    public List<SDBSCollectionModel> findDataByFuzzyFormula(String fuzzyFormula,String collectionName){
+        return findDataSDBSCollection.findDataByFuzzy(fuzzyFormula,collectionName);
+    }
 }

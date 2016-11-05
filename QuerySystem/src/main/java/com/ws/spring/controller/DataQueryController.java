@@ -2,14 +2,12 @@ package com.ws.spring.controller;
 
 import com.ws.spring.model.*;
 import com.ws.spring.service.*;
+import com.ws.spring.control.RequestLimit;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -49,16 +47,9 @@ public class DataQueryController {
     @Autowired
     FindDataIrServiceImpl2 irServiceImpl2;
 
-//    @RequestMapping(value = "/getMessage",method = RequestMethod.GET)
-//    public String getMessage(ModelMap modelMap){
-//        SDBSCollectionModel sdbsCollectionModel = (SDBSCollectionModel) service.findDataBySdbsno(1,"sdbs_collection");
-//        modelMap.addAttribute("sdbsno",sdbsCollectionModel);
-//
-//        return "getmessage";
-//    }
-
+    @RequestLimit(count = 10,time = 60000)
     @RequestMapping(value = "/test",method = RequestMethod.GET)
-   public String test(Model model){
+    public String test(Model model){
         if(!model.containsAttribute("dataQuery")){
             model.addAttribute("dataQuery",new DataQuery());
         }
@@ -84,12 +75,24 @@ public class DataQueryController {
 
             return "getmessage";
         }
+        if(dataQuery.getDataFormula()!=null){
+            System.out.println(dataQuery.getDataFormula());
+            if(dataQuery.getDataFormula().length()==1 && dataQuery.getDataFormula().equals("%")){
 
-        List<SDBSCollectionModel> lists = service.findDataByFormula(dataQuery.getDataFormula().trim().toUpperCase(),"sdbs_collection");
-        if(lists==null || lists.size()==0)
-            return "error";
-        modelMap.addAttribute("formula",lists);
-        return "formula";
+            }else if(dataQuery.getDataFormula().length()>1 && dataQuery.getDataFormula().contains("%")){
+                List<SDBSCollectionModel> fuzzyLists = service.findDataByFuzzyFormula(dataQuery.getDataFormula().trim().toUpperCase(),"sdbs_collection");
+                if(fuzzyLists==null || fuzzyLists.size()==0)
+                    return "error";
+                modelMap.addAttribute("formula",fuzzyLists);
+                return "fuzzy";
+            }
+            List<SDBSCollectionModel> lists = service.findDataByFormula(dataQuery.getDataFormula().trim().toUpperCase(),"sdbs_collection");
+            if(lists==null || lists.size()==0)
+                return "error";
+            modelMap.addAttribute("formula",lists);
+            return "formula";
+        }
+       return "error";
     }
 
 
@@ -102,7 +105,7 @@ public class DataQueryController {
         }
         System.out.println(msColledtionModel.getPicUrl());
         modelMap.addAttribute("ms",msColledtionModel);
-        System.out.println("调用ms");
+        System.out.println("invoke ms");
        return "ms";
     }
 
@@ -122,7 +125,7 @@ public class DataQueryController {
         }
         System.out.println(cnmrColledtionModel.getFirstPicUrl());
         modelMap.addAttribute("cnmr",cnmrColledtionModel);
-        System.out.println("调用cnmr");
+        System.out.println("invoke cnmr");
         return "cnmr";
     }
 
@@ -141,7 +144,7 @@ public class DataQueryController {
         }
         System.out.println(esrCollectionModel.getPicUrl());
         modelMap.addAttribute("esr",esrCollectionModel);
-        System.out.println("调用esr");
+        System.out.println("invoke esr");
         return "esr";
     }
 
@@ -160,7 +163,7 @@ public class DataQueryController {
         }
         System.out.println(hnmrCollectionModel.getFirstPicUrl());
         modelMap.addAttribute("hnmr",hnmrCollectionModel);
-        System.out.println("调用hnmr");
+        System.out.println("invoke hnmr");
         return "hnmr";
     }
 
@@ -180,11 +183,11 @@ public class DataQueryController {
         }
         if(irCollectionModel2.getSecondPicUrl()!=null){
             modelMap.addAttribute("ir2",irCollectionModel2);
-            System.out.print("调用ir2");
+            System.out.print("invoke ir2");
             return "ir2";
         }
         modelMap.addAttribute("ir",irCollectionModel);
-        System.out.println("调用ir");
+        System.out.println("invoke ir");
         return "ir";
     }
 
@@ -203,7 +206,7 @@ public class DataQueryController {
         }
         System.out.println(ramanCollectionModel.getPicUrl());
         modelMap.addAttribute("raman",ramanCollectionModel);
-        System.out.println("调用raman");
+        System.out.println("invoke raman");
         return "raman";
     }
 

@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>cnmr页面测试</title>
+    <title>cnmr页面</title>
 </head>
 <body>
     <div>

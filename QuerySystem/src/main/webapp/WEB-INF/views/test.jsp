@@ -4,17 +4,20 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>页面测试</title>
+    <title>页面查询</title>
 </head>
 <body>
-<form:form method="post" action="/test" modelAttribute="dataQuery">
-    SDBS NO:
-    <form:input path="dataSbdsno"/>
+<div style="margin-top: 100px;margin-left: 200px ">
+    <form:form method="post" action="/test" modelAttribute="dataQuery">
+        SDBS NO:
+        <form:input path="dataSbdsno"/>
 
-    Molecular Formula:
-    <form:input path="dataFormula" />
+        Molecular Formula:
+        <form:input path="dataFormula" />
 
-    <input type="submit" value="submit">
-</form:form>
+        <input type="submit" value="submit">
+    </form:form>
+</div>
+
 </body>
 </html>

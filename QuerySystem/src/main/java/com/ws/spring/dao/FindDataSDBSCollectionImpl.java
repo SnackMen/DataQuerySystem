@@ -34,4 +34,16 @@ public class FindDataSDBSCollectionImpl implements FindDataDao {
         System.out.println("通过fromula进行查询");
         return mongoTemplate.find(new Query(Criteria.where("mole_Formula").is(formula)),SDBSCollectionModel.class,collectionName);
     }
+
+    public List<SDBSCollectionModel> findDataByFuzzy(String formulaFuzzy, String collectionName){
+        String []fuzzy = formulaFuzzy.split("%");
+        StringBuilder sb = new StringBuilder();
+        for(String string : fuzzy){
+            if(string.equals(""))
+                sb.append(".*");
+            else
+                sb.append(string);
+        }
+        return mongoTemplate.find(new Query(Criteria.where("mole_Formula").regex(sb.toString())),SDBSCollectionModel.class,collectionName);
+    }
 }

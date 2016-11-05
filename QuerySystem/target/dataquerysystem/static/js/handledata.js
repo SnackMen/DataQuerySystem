@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $(".atn-ms").click(function () {
         // alert($(this).parent().parent().children(":first").text());
         $("#postForm").attr("action","/ms?sdbsno="+$(this).parent().parent().children(":first").text());
@@ -28,5 +29,7 @@ $(document).ready(function () {
     $(".atn-esr").click(function () {
         $("#postForm").attr("action","/esr?sdbsno="+$(this).parent().parent().children(":first").text());
         $('#postForm').submit();
-    })
+    });
+
+
 });
