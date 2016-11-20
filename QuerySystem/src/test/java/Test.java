@@ -46,8 +46,11 @@ public class Test {
 ////        }else{
 ////            System.out.println(false);
 ////        }
-//        HashSet<SDBSCollectionModel> hashSet = new HashSet<>(lists);
-//        List<SDBSCollectionModel> list = new ArrayList<>(hashSet);
+        HashSet<SDBSCollectionModel> hashSet = new HashSet<>(lists);
+        List<SDBSCollectionModel> list = new ArrayList<>(hashSet);
+        System.out.println(list.size());
+        System.out.println(list.get(0));
+
 //        if(list!=null){
 //            System.out.println(lists.size());
 //        }else{

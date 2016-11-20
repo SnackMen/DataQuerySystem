@@ -1,5 +1,8 @@
 package com.ws.spring.dao;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.CommandResult;
+import com.mongodb.DBObject;
 import com.ws.spring.configure.MongodbDataConfiguration;
 import com.ws.spring.model.SDBSCollectionModel;
 import org.springframework.context.ApplicationContext;

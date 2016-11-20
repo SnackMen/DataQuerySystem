@@ -48,36 +48,40 @@ public class DataQueryController {
     FindDataIrServiceImpl2 irServiceImpl2;
 
     @RequestLimit(count = 10,time = 60000)
-    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    @RequestMapping(value = "/search",method = RequestMethod.GET)
     public String test(Model model){
         if(!model.containsAttribute("dataQuery")){
             model.addAttribute("dataQuery",new DataQuery());
         }
 
-        return "test";
+        return "search";
     }
 
-    @RequestMapping(value = "/test",method = RequestMethod.POST)
+    @RequestMapping(value = "/search",method = RequestMethod.POST)
     public String testValidate(ModelMap modelMap, @Valid @ModelAttribute("dataQuery") DataQuery dataQuery, BindingResult bindingResult){
         if(bindingResult.getErrorCount() > 0){
             System.out.println("wrong");
             return "error";
         }
         if(dataQuery.getDataSbdsno()!=null){
+            System.out.println(dataQuery.getDataSbdsno());
             SDBSCollectionModel sdbsCollectionModel = (SDBSCollectionModel) service.findDataBySdbsno(dataQuery.getDataSbdsno(),"sdbs_collection");
-            if(sdbsCollectionModel==null){
+            if(sdbsCollectionModel == null){
                 return "error";
+            }else{
+                modelMap.addAttribute("sdbsno",sdbsCollectionModel);
+                return "getmessage";
             }
-            if(!sdbsCollectionModel.getMs().equals("N")){
-                sdbsCollectionModel.setMs("ms.jsp");
-            }
-            modelMap.addAttribute("sdbsno",sdbsCollectionModel);
+//            if(!sdbsCollectionModel.getMs().equals("N")){
+//                sdbsCollectionModel.setMs("ms.jsp");
+//            }
 
-            return "getmessage";
         }
         if(dataQuery.getDataFormula()!=null){
             System.out.println(dataQuery.getDataFormula());
-            if(dataQuery.getDataFormula().length()==1 && dataQuery.getDataFormula().equals("%")){
+            if(dataQuery.getDataFormula()==null || dataQuery.getDataFormula().length()==0)
+                return "error";
+            else if(dataQuery.getDataFormula().length()==1 && dataQuery.getDataFormula().equals("%")){
 
             }else if(dataQuery.getDataFormula().length()>1 && dataQuery.getDataFormula().contains("%")){
                 List<SDBSCollectionModel> fuzzyLists = service.findDataByFuzzyFormula(dataQuery.getDataFormula().trim().toUpperCase(),"sdbs_collection");
