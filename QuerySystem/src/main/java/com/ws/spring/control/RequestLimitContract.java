@@ -5,6 +5,7 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -22,8 +23,9 @@ import java.util.TimerTask;
  */
 @Aspect
 @Component
+@PropertySource("classpath:log4j.properties")
 public class RequestLimitContract {
-    private Logger logger = Logger.getLogger(RequestLimitContract.class);
+    private static final Logger logger = Logger.getLogger(RequestLimitContract.class);
     private Map<String, Integer> redisTemplate=new HashMap<String,Integer>();
     @Before("within(@org.springframework.stereotype.Controller *) && @annotation(limit)")
     public void requestLimit(final JoinPoint joinPoint, RequestLimit limit) throws RequestLimitException {
